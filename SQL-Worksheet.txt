@@ -1,0 +1,123 @@
+WorkSheet-1 
+
+SQL
+
+Q1 and Q2 have one or more correct answer. Choose all the correct option to answer your question. 
+
+1. Which of the following is/are DDL commands in SQL? 
+A) Create                                         B) Update 
+C) Delete                                         D) ALTER 
+Answer1: A,D
+
+2. Which of the following is/are DML commands in SQL? 
+A) Update                                            B) Delete 
+C) Select                                            D) Drop 
+
+Answer2: A,B
+
+Q3 to Q10 have only one correct answer. Choose the correct option to answer your question. 
+
+3.Full form of SQL is: 
+A) Strut querying language                         B) Structured Query Language 
+C) Simple Query Language                           D) None of them 
+
+Answer3: B
+
+4.Full form of DDL is: 
+A) Descriptive Designed Language            B) Data Definition Language 
+C) Data Descriptive Language                D) None of the above. 
+
+Answer4: B
+
+5. DML is: 
+A) Data Manipulation Language                B) Data Management Language 
+C) Data Modeling Language                    D) None of these 
+
+Answer5: A
+
+6. Which of the following statements can be used to create a table with column B int type and C float type?                         
+A) Table A (B int, C float)                      B) Create A (b int, C float) 
+C) Create Table A (B int,C float)                D) All of them 
+
+Answer6: C
+
+7. Which of the following statements can be used to add a column D (float type) to the table A created above? 
+A) Table A ( D float)                                    B) Alter Table A ADD COLUMN D float 
+C) Table A( B int, C float, D float)                     D) None of them 
+
+Answer7: B
+
+8. Which of the following statements can be used to drop the column added in the above question? 
+A) Table A Drop D               B) Alter Table A Drop Column D 
+C) Delete D from A              D) None of them 
+
+Answer8: B
+
+9. Which of the following statements can be used to change the data type (from float to int ) of the column D of 
+table A created in above questions? 
+A) Table A (D float int)        B) Alter Table A  Alter Column D int 
+C) Alter Table A D float int    D) Alter table A Column D float to int 
+
+Answer9: B
+
+10. Suppose we want to make Column B of Table A as primary key of the table. By which of the following 
+statements we can do it? 
+A) Alter Table A Add Constraint Primary Key B             B) Alter table (B primary key) 
+C) Alter Table A Add Primary key B                        D) None of them 
+
+Answer10: C
+
+Q11 to Q15 are subjective answer type questions, Answer them briefly. 
+
+11. What is data-warehouse? 
+
+Answer: A single and complete and consistent store of data obtain from a variety of different sources made 
+available to end users in a what they can understand and use in a business context. A process of transferming data into 
+information and making it available to users in a timely enough manner to make a difference. 
+It is a rational and multidimensional database management system designed to support mamagment decision making. A data warehousing 
+is a copy of transaction data specifically structured for quearing and reporting. Technique for assembling and managing data from various source
+for the purpose of answering business questions. Thus making decision that were not previous possible. 
+
+
+12. What is the difference between OLTP VS OLAP? 
+Answer: OLAP(Online Analytical Processing) is a powerful technology for data discovery, including capabilities for limitless report viewing, complex analytical calculations and
+preditive "what if" scenario planning.
+
+OLTP(Online Transaction processing): it supports the daily business operations. It is a database which must typically allow the real time processing
+of SQL transaction to support traditional processes E-commerce and time critical applications.
+
+OLTP Processing Speed is typically very fast. but OLAP system speed depends on amount of data involved.
+OLTP Database design highly normalized with many tables. In OLAP database design is typically de-normalized.
+OLTP: operational Data is the original source of data. OLAP: consolidation data, it comes from various OLTP Databases.
+OLTP: to control and run fundamental business tasks. OLAP: it helps with planning, problem solving and decision support.
+OLTP: Short and fast inserts and updates initiated by end users. OLAP: Periodic long running batch jobs refresh the data.     
+ 
+
+13. What are the various characteristics of data-warehouse? 
+
+Answer: -Data Warehouse is subject oriented. It provides information on a topic rather than ongoing operation of organizations.
+it emphasized modeling and analyzing decision making data.
+-Data Warehouse means establishing a standard unit of measurment from the different databases for all. it must also keep naming conversation,
+format and coding consistent. 
+-Data warehouse is quite expensive. the data collected in a data warehouse is acknowlwdge over a given period and provides historical information.
+-Data warehouse is a non volatile means that provide data will not be erased when new data are entered into it. data is read only, only updated regularly.    
+   
+
+14. What is Star-Schema?? 
+
+Answer: Star schema: The most common modeling paradigm is the star schema, 
+in which the data warehouse contains (1) a large central table (fact table ) containing the bulk of the 
+data, with no redundancy, and (2) a set of smaller attendant tables (dimension tables ), one for each 
+dimension. The schema graph resembles a starburst, with the dimension tables displayed 
+in a radial pattern around the central fact table.
+
+
+15. What do you mean by SETL?
+
+Answer:  is a type of data integration that refers to the three steps (extract, transform, load) used to 
+blend data from multiple sources. It's often used to build a data warehouse. During this process, data is 
+taken (extracted) from a source system, converted (transformed) into a format that can be analyzed, and stored 
+(loaded) into a data warehouse or other system. Extract, load, transform (ELT) is an alternate but related approach 
+designed to push processing down to the database for improved performance.
+
+ 
