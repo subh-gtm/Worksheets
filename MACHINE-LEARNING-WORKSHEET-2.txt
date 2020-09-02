@@ -1,0 +1,142 @@
+
+MACHINE LEARNING 
+
+
+WORKSHEET – 2 
+
+In Q1 to Q5, only one option is correct, Choose the correct option: 
+
+1.In which of the following you can say that the model is overfitting? 
+A) High R-squared value for train-set and High R-squared value for test-set. 
+B) Low R-squared value for train-set and High R-squared value for test-set. 
+C) High R-squared value for train-set and Low R-squared value for test-set. 
+D) None of the above 
+
+Answer1: A
+
+2. Which among the following is a disadvantage of decision trees? 
+A) Decision trees are prone to outliers. 
+B) Decision trees are highly prone to overfitting. 
+C) Decision trees are not easy to interpret 
+D) None of the above. 
+
+Answer2: B
+
+3. Which of the following is an ensemble technique? 
+A) SVM                    B) Logistic Regression 
+C) Random Forest          D) Decision tree 
+
+Answer3:C
+
+4. Suppose you are building a classification model for detection of a fatal disease where detection of the disease is most 
+   important. In this case which of the following metrics you would focus on? 
+A) Accuracy                  B) Sensitivity 
+C) Precision                 D) None of the above. 
+
+Answer4: A
+
+5. The value of AUC (Area under Curve) value for ROC curve of model A is 0.70 and of model B is 0.85. Which of these two 
+   models is doing better job in classification? 
+A) Model A                                   B) Model B 
+C) both are performing equal                 D) Data Insufficient 
+
+Answer5: A
+
+In Q6 to Q9, more than one options are correct, Choose all the correct options: 
+
+6. Which of the following are the regularization technique in Linear Regression??  
+A) Ridge            B) R-squared 
+C) MSE              D) Lasso 
+
+Answer6: A,B,D
+
+7. Which of the following is not an example of boosting technique? 
+A) Adaboost                  B) Decision Tree 
+C) Random Forest             D) Xgboost. 
+
+Answer7: B,C
+
+8. Which of the techniques are used for regularization of Decision Trees?  
+A) Pruning                                          B) L2 regularization 
+C) Restricting the max depth of the tree            D) All of the above 
+
+Answer8: A,C
+
+9. Which of the following statements is true regarding the Adaboost technique?  
+A) We initialize the probabilities of the distribution as 1/n, where n is the number of data-points 
+B) A tree in the ensemble focuses more on the data points on which the previous tree was not performing well 
+C) It is example of bagging technique 
+D) None of the above 
+
+Answer9: A,B
+
+Q10 to Q15 are subjective answer type questions, Answer them briefly. 
+
+10.  Explain how does the adjusted R-squared penalize the presence of unnecessary predictors in the model? 
+Answer: R-squared called the coefficient of determination, it used to explain the degree to which input variables 
+(predictor variables) the variation of output variables (predicted variables). It ranges from 0 to 1. 
+It measures the proportion of variation explained by only those independent variables that really help 
+in explaining the dependent variable. It penalizes you for adding independent 
+variable that do not help in predicting the dependent variable.
+
+Adjusted R-Squared can be calculated mathematically in terms of sum of squares. 
+
+
+11. Differentiate between Ridge and Lasso Regression. 
+Answer: a. LASSO shrinks coefficients due to the absolute value, Ridge regression increases coefficients due to the squared term.
+b. Ridge shrinks coefficients due to the absolute value, LASSO regression increases coefficients due to the squared term.
+c. LASSO Regression reduces the number of coefficients in a model. Ridge Regression shrinks the value of the coefficients.
+d. Ridge Regression reduces the number of coefficients in a model. Lasso Regression shrinks the value of the coefficients
+
+12.  What is VIF? What is the suitable value of a VIF for a feature to be included in a regression modelling? 
+Answer: The variance inflation factor (VIF) quantifies the extent of correlation between one predictor and the other 
+predictors in a model. It is used for diagnosing collinearity/multicollinearity. Higher values signify that it is 
+difficult to impossible to assess accurately the contribution of predictors to a model.
+
+A VIF can be computed for each predictor in a predictive model. A value of 1 means that the predictor is 
+not correlated with other variables. The higher the value, the greater the correlation of the variable with 
+other variables. Values of more than 4 or 5 are sometimes regarded as being moderate to high, with values 
+of 10 or more being regarded as very high. These numbers are just rules of thumb; in some contexts a VIF of 
+2 could be a great problem (e.g., if estimating price elasticity), whereas in straightforward predictive 
+applications very high VIFs may be unproblematic.
+The common rule use in practice if VIF>10 means we have high multicollinerity or if value around 1 we are in good condition and processed with regression.
+
+
+13. Why do we need to scale the data before feeding it to the train the model? 
+Answer:Scaling is one of the most critical steps during the pre-processing of data before creating
+ a machine learning model. It is make a difference between a weak machine learning model and a better one. 
+Two common techniques of Scaling are Normalization and Standardization.
+Scaling transforming data so that it fits within a specific scale, like 0-100 or 0-1.
+Normalization is used when we want to bound our values between two numbers, between 0,1 or -1,1. 
+In Standardization we transforms the data to have zero mean and a variance of 1, 
+Machine learning algorithm deals only in number, if there is a huge difference in the range
+like few rangs are in thousands and few rangs are in the tens,so it makes the underlying assumption that 
+higher rang numbers have superiority of some sort. So these more significant number starts
+playing a more decisive role while training the model.Thus feature scaling is required to 
+bring every feature in the same footing without any upfront importance.
+
+14. What are the different metrics which are used to check the goodness of fit in linear regression? 
+Answer: For check the goodness of fit in linear model we are use three different matrics which is below:
+A. R Square/Adjusted R Square
+B. Mean Squared Error (MSE)
+C. Mean Absolute Error
+In R Square Measurement we check how much of variability in dependent variable can be explained in the model .
+it is square of correlation coefficient and thats why it is called adjusted R Square. it is good measure to determine
+how model fits the dependent variable. it doesn't take into consideration of overfitting problem.
+MSE is calculated by the sum of square of prediction error which is real output minus predicted 
+output and then divide by the number of data points. 
+It gives you an absolute number on how much your predicted results deviate from the actual number. 
+Mean Absolute Error(MAE) is similar to Mean Square Error(MSE).instead of the sum of square of error 
+in MSE, MAE is taking the sum of absolute value of error. MSE gives larger penalisation to big 
+prediction error by square it while MAE treats all errors the same.
+
+ 15. From the following confusion matrix calculate sensitivity, specificity, precision, recall and accuracy. 
+Actual/Predicted  True  False 
+True  1000  50 
+False  250  1200 
+Answer: Accuracy= TP+TN/TP+TN+FP+FN = 1000+1200/1000+250+50+1200 = .88
+Recall/Sensitivity= TP/TP+FN =1000/1000+50 = .95
+Precision= TP/TP+FP = 1000/1000+250 =  .8
+Specificity= TN/TN+FP = 1200/1200+250 = .82
+F Score= 2*Recall*Precision/Recall+Precision 2*(.95)*(.8)/(.95)+(.8) = .86
+
