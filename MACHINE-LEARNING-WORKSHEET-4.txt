@@ -1,0 +1,138 @@
+
+MACHINE LEARNING – WORKSHEET 4 
+
+In Q1 to Q8, only one option is correct, Choose the correct option: 
+
+1. Which of the following in sklearn library is used for hyper parameter tuning? 
+A) GridSearchCV()                     B) RandomizedCV() 
+C) K-fold Cross Validation            D) None of the above 
+
+Answer1: B
+
+2. In which of the below ensemble techniques trees are trained in parallel? 
+A) Random forest               B) Adaboost 
+C) Gradient Boosting           D) All of the above 
+
+Answer2: D
+
+3. In machine learning, if in the below line of code: 
+   sklearn.svm.SVC (C=1.0, kernel='rbf', degree=3) 
+   we increasing the C hyper parameter, what will happen? 
+A) The regularization will increase           B) The regularization will decrease 
+C) No effect on regularization                D) kernel will be changed to linear  
+
+Answer3: B
+
+4. Check the below line of code and answer the following questions: 
+   sklearn.tree.DecisionTreeClassifier(*, criterion='gini', splitter='best', max_depth=None, 
+   min_samples_split=2) 
+   Which of the following is true regarding max_depth hyper parameter? 
+A) It regularizes the decision tree by limiting the maximum depth up to which a tree can be grown. 
+B) It denotes the number of children a node can have. 
+C) both A & B 
+D) None of the above 
+
+Answer4: C
+
+5. Which of the following is true regarding Random Forests? 
+A) It's an ensemble of weak learners. 
+B) The component trees are trained in series 
+C) In case of classification problem, the prediction is made by taking mode of the class labels predicted by the 
+   component trees. 
+D) None of the above 
+
+Answer5: A
+
+6.   What can be the disadvantage if the learning rate is very high in gradient descent? 
+A) Gradient Descent algorithm can diverge from the optimal solution. 
+B) Gradient Descent algorithm can keep oscillating around the optimal solution and may not settle. 
+C) Both of them 
+D)None of them. 
+
+Answer6: A
+
+7. As the model complexity increases, what will happen? 
+A) Bias will increase, Variance decrease   B) Bias will decrease, Variance increase 
+C)both bias and variance increase          D) Both bias and variance decrease. 
+
+Answer7: B
+
+8. Suppose I have a linear regression model which is performing as follows: 
+    Train accuracy=0.95 
+    Test accuracy=0.75 
+Which of the following is true regarding the model? 
+A) model is underfitting            B) model is overfitting 
+C) model is performing good         D) None of the above 
+
+Answer8: B
+
+Q9 to Q15 are subjective answer type questions, Answer them briefly. 
+
+9. Suppose we have a dataset which have two classes A and B. The   percentage of class A is 40% and 
+percentage of class B is 60%. Calculate the Gini index and entropy of the dataset. 
+Answer9: Gini Index is 0.48
+         Entropy 
+
+
+10. What are the advantages of Random Forests over Decision Tree? 
+Answer10:Random forest is a supervised learning algorithm. Which is used for classification and regression.It
+     is mainly used for classification problems. Random forest algorithm creates decision trees on data samples
+     and then gets the prediction from each of them and finally selects the best solution by means of voting. 
+    It is an ensemble method which is better than a single decision tree because it reduces the over-fitting by averaging the result.
+    A decision tree is a structure that includes a root node, branches, and leaf nodes. Each internal node denotes a test 
+    on an attribute, each branch denotes the outcome of a test, and each leaf node holds a class label.
+     The topmost node in the tree is the root node.
+     
+    a. In Random Forest the problem of overfitting by averaging or combining the results of different decision trees.
+    b. Random forests work well for a large range of data items than a single decision tree does.
+    c. Random forest has less variance then single decision tree.
+    d. Random forests are very flexible and possess very high accuracy.
+    e. Scaling of data does not require in random forest algorithm. It maintains good accuracy even after providing data without scaling.
+    f. Random Forest algorithms maintains good accuracy even a large proportion of the data is missing.
+
+11. What is the need of scaling all numerical features in a dataset? Name any two techniques used for scaling.  
+Answer11: Feature Scaling is a technique to standardize the independent features present in the data in a fixed range. 
+          It is performed during the data pre-processing to handle highly varying magnitudes or values or units. 
+          If feature scaling is not done, then a machine learning algorithm tends to weigh greater values, higher 
+          and consider smaller values as the lower values, regardless of the unit of the values. 
+         a. Min Max Scaler
+         b. Standard Scaler
+12. Write down some advantages which scaling provides in optimization using gradient descent algorithm. 
+Answer12: Machine learning algorithms like linear regression, logistic regression, neural network, etc. that use gradient descent as an optimization
+          technique require data to be scaled. We can speed up gradient descent by scaling. This is because 
+          θ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down 
+            to the optimum when the variables are very uneven.
+
+13. In case of a highly imbalanced dataset for a classification problem, is accuracy a good metric to measure the 
+performance of the model. If not, why? 
+Answer13. The most common metric used to evaluate the performance of a classification predictive model is classification accuracy. 
+         the accuracy of a predictive model is good (above 90% accuracy), therefore it is also very common to summarize 
+         the performance of a model in terms of the error rate of the model. Classification accuracy involves first using a classification 
+         model to make a prediction for each example in a test dataset. The predictions are then compared to the known labels 
+         for those examples in the test set. Accuracy is then calculated as the proportion of examples in the test set that were predicted 
+          correctly, divided by all predictions that were made on the test set.
+          When the class distribution is slightly skewed, accuracy can still be a useful metric. When the skew in the class distributions 
+          are severe, accuracy can become an unreliable measure of model performance.Typically, classification predictive modeling is practiced
+          with small datasets where the class distribution is equal or very close to equal. Therefore, most practitioners develop an intuition that
+          large accuracy score (or conversely small error rate scores) are good, and values above 90 percent are great.
+         Achieving 90 percent classification accuracy, or even 99 percent classification accuracy, may be trivial on an imbalanced classification problem.
+         This means that intuitions for classification accuracy developed on balanced class distributions will be applied and will be wrong, 
+          misleading the practitioner into thinking that a model has good or even excellent performance when it, in fact, does not.
+
+14. What is “f-score" metric? Write its mathematical formula. 
+Answer14: The F-score, also called the F1-score, is a measure of a model’s accuracy on a dataset. It is used to evaluate binary
+          classification systems, which classify examples into ‘positive’ or ‘negative’.The F-score is a way of combining the 
+          precision and recall of the model, and it is defined as the harmonic mean of the model’s precision and recall. The F-score
+          is commonly used for evaluating information retrieval systems such as search engines, and also for many kinds of machine 
+         learning models, in particular in natural language processing. It is possible to adjust the F-score to give more importance 
+         to precision over recall, or vice-versa. Common adjusted F-scores are the F0.5-score and the F2-score, as well as the standard F1-score. 
+        f1= 2* Precision * Recall / Precision + Recall
+
+15. What is the difference between fit(), transform() and fit_transform()? 
+Answer15: fit method, when applied to the training dataset,learns the model parameters (for example, mean and standard deviation). 
+          We then need to apply the transform method on the training dataset to get the transformed (scaled) training dataset. 
+           We could also perform both of this steps in one step by applying fit_transform on the training dataset.
+          in practice we need to have a separate training and testing dataset and that is where having a separate 
+          fit and transform method helps. We apply fit on the training dataset and use the transform method on both - the training 
+          dataset and the test dataset. Thus the training as well as the test dataset are then transformed(scaled) using the model 
+           parameters that were learnt on applying the fit method the training dataset.
