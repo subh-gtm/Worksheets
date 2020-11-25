@@ -1,0 +1,111 @@
+Statistics– WORKSHEET 6 
+ 
+ 
+ 
+Q1 to Q9 have only one correct answer. Choose the correct option to answer your question. 
+
+1. Which of the following is the correct formula for total variation? 
+a) Total Variation = Residual Variation – Regression Variation 
+b) Total Variation = Residual Variation + Regression Variation 
+c) Total Variation = Residual Variation * Regression Variation 
+d) All of the mentioned 
+
+Answer1: B
+
+2. Collection of exchangeable binary outcomes for the same covariate data are called outcomes. 
+a) random 
+b) direct 
+c) binomial 
+d) none of the mentioned 
+
+Answer2: C
+
+3. How many outcomes are possible with bernoulli trial? 
+a) 2 
+b) 3 
+c) 4 
+d) None of the mentioned 
+
+Answer3: A
+
+
+4. If Ho is true and we reject it, then it is called: 
+(a) Type-I error 
+(b) Type-II error 
+(c) Standard error 
+(d) Sampling error 
+
+Answer4: A
+
+
+5. Level of significance is also called: 
+(a) Power of the test 
+(b) Size of the test 
+(c) Level of confidence 
+(d) Confidence coefficient 
+
+Answer5: B
+
+6. The chance of rejecting a true hypothesis decreases when sample size: 
+(a) Decreases 
+(b) Increases  
+(c) Both of them 
+(d) None of them 
+
+Answer6: B
+
+7. Which of the following testing is concerned with making decisions using data? 
+(a) Probability 
+(b) Hypothesis 
+(c) Causal 
+(d) None of the mentioned 
+
+Answer7: B
+
+
+8.What is the purpose of multiple testing in statistical inference? 
+(a) Minimize errors 
+(b) Minimize false positives 
+(c) Minimize false negatives 
+(d) All of the mentioned 
+
+Answer8: D
+
+
+9. Normalized data is centered at   and has unit equal to standard deviations of the original data. 
+(a) 0            (b) 5 
+(c) 1            (d) 10 
+
+Answer9: A
+
+Q10and Q15 are subjective answer type questions, Answer them in your own words briefly. 
+
+
+10. What Is Bayes' Theorem? 
+Answer10:
+
+11. What is z-score? 
+Answer11: Z-score is one of the most popular methods to standardize data, and can be done by subtracting
+         the mean and dividing by the standard deviation for each value of each feature. Formula of Z score
+         z= value-mean/standard deviation 
+         Once the standardization is done, all the features will have a mean of zero, a standard deviation of one, 
+         and thus, the same scale.
+
+12. What is t-test?   
+Answer12: The t-test assesses whether the means of two groups are statistically different from each other. 
+          This analysis is appropriate whenever we want to compare the means of two groups, and especially 
+          appropriate as the analysis for the posttest-only two-group randomized experimental design.
+ 
+13. What is a percentile?  
+Answer13: Percentiles tells how a value compares to other values. in other words percentiles indicate the percentage of 
+           scores that falls below a particular value. It tell us where a score stands relative to other scores.
+
+14. What is ANOVA?  
+Answer14: An ANOVA test is a way to find out if given data results are significant. In other words, it helps us to figure out
+          if we need to reject the null hypothesis or accept the alternate hypothesis.
+          Basically, we are checking data groups to see if there’s a difference between them. 
+
+15. How can ANOVA help?
+Answer15: The one-way ANOVA can help us to know whether or not there are significant differences between the means of your independent
+          variables (such as the first example: age, sex, income). When we understand how each independent variable’s mean is different
+          from the others.
