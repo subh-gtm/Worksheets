@@ -1,0 +1,117 @@
+ 
+MACHINE LEARNING – WORKSHEET 11 
+
+
+(LINEAR REGRESSION) 
+
+
+In Q1 to Q8, only one option is correct, Choose the correct option: 
+
+
+1. What happens to R2 measure if we add a new feature? 
+A) remains same                         B) always increases 
+C) may or may not increase              D) always decreases 
+
+Answer1: B
+
+2. The correct relationship between SST, SSR and SSE is given by: 
+   A) SSR = SST + SSE             B) SST = SSR + SSE 
+   C) SSE = SSR – SST             D) None of the above 
+
+Answer2: B
+
+3. Residuals in regression analysis can be defined as:   
+  A) difference between the actual value and the predicted value. 
+  B) difference between the actual value and the mean of predicted value. 
+  C) difference between the actual value and mean of dependent variable. 
+  D) None of the above. 
+
+Answer3: A
+
+4. In a simple linear regression model, if we change the input variable by 1 unit, then how much output variable 
+   will change?  
+A) By 1                               B) No Change 
+C) By its slope                       D) None of the above 
+
+Answer4: C
+
+5. If the coefficient of determination is equal to 1, then correlation coefficient: 
+A) must also be equal to 1                     B) can be either -1 or 1 
+C) can be any value between -1 to 1            D) must be -1 
+
+Answer5: B
+
+6. Which of the following plot is best suited for the linear relationship of continuous variables? 
+   A) Scatter plot             B) Histograms 
+   C) Pie charts               D) All of the above 
+
+Answer6: A
+
+7. The ratio of MSR/MSE produces: 
+   A) t-statistics              B) f-statistics 
+   C) z-statistics              D) None of the above. 
+
+Answer7: B
+
+8. Which of the following regularizations uses only L 2  normalization for its penalty parameter? 
+   A) Lasso            B) Elastic Nets 
+   C) Ridge            D) All of the above 
+
+Answer8: C
+
+In Q9 to Q11, more than one options are correct, Choose all the correct options: 
+
+
+9. Which of the following statement/s are true for best fitted line? 
+   A) It shows the causal relationship between dependent and independent variables  
+   B) It shows the positive or negative relation between dependent and independent variables 
+   C) It always goes through origin 
+   D) It is a straight line that is the best approximation of the given data sets 
+
+Answer9: B,D 
+
+
+10. Regularizations helps in: 
+   A) Reducing the training time          B) Generalizing the test set 
+   C) Automatic feature selection         D) Grouping the data 
+
+Answer10: A,B
+
+11. Linear regression can be implemented through: 
+    A) Normal Equation              B) Singular Value Decomposition 
+    C) Parity checks                D) nodes 
+
+Answer11: A,B
+
+Q12 to Q15 are subjective answer type questions, Answer them briefly. 
+
+12. Explain R2 and adjusted R2 metrics? 
+Answer12: R2 : It measures the proportion of the variation in your dependent variable explained by all of your independent variables in
+    the model. It assumes that every independent variable in the model helps to explain variation in the dependent variable. 
+    In reality, some independent variables (predictors) don't help to explain dependent (target) variable. In other words, 
+    some variables do not contribute in predicting target variable.
+    Adjusted R2 : It measures the proportion of variation explained by only those independent variables that really help in explaining the
+    dependent variable. It penalizes you for adding independent variable that do not help in predicting the dependent variable.
+    Adjusted R-Squared can be calculated mathematically in terms of sum of squares. The only difference between R-square and Adjusted R-square 
+    equation is degree of freedom.
+
+13. Explain the cost function of linear regression? 
+Answer13: It is a function that measures the performance of a Machine Learning model for given data. 
+    Cost Function quantifies the error between predicted values and expected values and presents it in the form
+    of a single real number. Depending on the problem Cost Function can be formed in many different ways. 
+    The purpose of Cost Function is to be either:
+    Minimized - then returned value is usually called cost, loss or error. The goal is to find the values of model parameters for which Cost Function return as small number as possible.
+    Maximized - then the value it yields is named a reward. The goal is to find values of model parameters for which returned number is as large as possible.
+
+14. Differentiate SSE, SSR and SST. 
+Answer14:SST: The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean. It is a measure of the total variability of the dataset.There is another notation for the SST. It is TSS or total sum of squares.
+    SSR:Sum of squares due to regression. It is the sum of the differences between the predicted value and the mean of the dependent variable.If this value of SSR is equal to the sum of squares total, it means our regression model captures all the observed variability and is perfect.
+    SSE:  Sum of squares error. The error is the difference between the observed value and the predicted value.
+
+15. What are the various evaluation metrics for linear regression?
+Answer15: The various metrics used to evaluate the results of the prediction are :
+      Mean Squared Error(MSE)
+      Root-Mean-Squared-Error(RMSE).
+      Mean-Absolute-Error(MAE).
+      R² or Coefficient of Determination.
+      Adjusted R²
